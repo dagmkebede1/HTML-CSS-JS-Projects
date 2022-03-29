@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        </style>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Lato", sans-serif;
+        }
+        .general{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+       
+        .cordian{
+            padding: 10px;
+            width: 450px;
+            margin: 0 auto;
+            box-shadow: 0 0 5px black;
+            border-radius: 5px;    
+        }
+        .cordian1{
+            padding: 10px;
+            width: 450px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px black;
+            border-radius: 5px;    
+        }
+        .cordian2{
+            padding: 10px;
+            width: 450px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px black;
+            border-radius: 5px;    
+        }
+        .item{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            
+            
+        
+            
+        }
+        .number{
+            padding-right: 10px;
+
+        }
+        .title, .number{
+            color: black;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .icon{
+            width: 24px;
+            margin-left: auto;
+            stroke: black;
+                        
+        }
+
+        .hidden-box{
+            display: none;
+            grid-column: 2/3; 
+            margin-top: 15px;
+            
+            
+        }
+        .hidden-box .text{
+            
+            line-height: 1.5;
+        }
+        .hidden-box ul{
+            
+            margin-left: 15px;
+            color: grey;
+            line-height: 1.5;
+        }
+        .hidden-box1{
+            display: none;
+            grid-column: 2/3; 
+            margin-top: 15px;
+            
+            
+        }
+        .hidden-box1 .text{
+            
+            line-height: 1.5;
+        }
+        .hidden-box1 ul{
+            
+            margin-left: 15px;
+            color: grey;
+            line-height: 1.5;
+        }
+        .hidden-box2{
+            display: none;
+            grid-column: 2/3; 
+            margin-top: 15px;
+            
+            
+        }
+        .hidden-box2 .text{
+            
+            line-height: 1.5;
+        }
+        .hidden-box2 ul{
+            
+            margin-left: 15px;
+            color: grey;
+            line-height: 1.5;
+        }
+        .open{
+            border-top: 4px solid green;
+            
+        }
+        .open .item .icon{
+            animation: 1s Rotate alternate;
+            transform: rotate(180deg);
+        }
+        .open .item .title, .open .item .number, .open .item svg {
+            color: green;
+            stroke: green;
+        }
+        .open .hidden-box{
+            /* animation: 2s sliddown ease-out; */
+            display: block;
+        }
+@keyframes sliddown {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+@keyframes Rotate {
+  0%{
+      transform: rotate(0deg);
+  }
+    100%{
+        transform: rotate(180deg);
+        
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="general">
+        <!-- <h1>.</h1> -->
+    <div class="cordian" id="cordian">
+        
+        <div class="item" >
+            
+            
+                <p class="number">1</p>
+                <p class="title">How do I get registre?</p> 
+                <svg class="icon" id="item" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>           
+            
+          
+        <div class="hidden-box" id="hidden">
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae? 
+                Lorem ipsum dolor sit amet.
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="cordian" id="cordian1">
+    <div class="item" >
+        
+
+            <p class="number">2</p>
+            <p class="title">How do I Contact the Team?</p> 
+            <svg class="icon" id="item1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>           
+        
+      
+    <div class="hidden-box" id="hidden">
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae? 
+            Lorem ipsum dolor sit amet.
+        </p>
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="cordian" id="cordian2">
+<div class="item" >
+    
+        <p class="number">3</p>
+        <p class="title">is this real?</p> 
+        <svg class="icon" id="item2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>           
+
+   
+
+<div class="hidden-box" id="hidden">
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae? 
+        Lorem ipsum dolor sit amet.
+    </p>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet </li>
+    </ul>
+</div>
+</div>
+</div>
+    </div>
+    </div>
+    <script>
+        const bottum = document.getElementById('item')
+        const bottum1 = document.getElementById('item1')
+        const bottum2 = document.getElementById('item2')
+        const hidden_box = document.getElementById('cordian')
+        const hidden_box1 = document.getElementById('cordian1')
+        const hidden_box2 = document.getElementById('cordian2')
+        bottum.addEventListener('click', ()=>{
+            hidden_box.classList.toggle('open');
+        })
+        bottum1.addEventListener('click', ()=>{
+            hidden_box1.classList.toggle('open');
+        })
+        bottum2.addEventListener('click', ()=>{
+            hidden_box2.classList.toggle('open');
+        })
+       
+        // bottum.addEventListner("click", ()=>{
+        // )
+
+        
+    </script>
+</body>
+</html>

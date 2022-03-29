@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+// font-family: 'Roboto Condensed', sans-serif;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.carosel{
+    position: relative;
+    margin: 100px auto;
+    background-color: green;
+    width: 700px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 60px;
+    img{
+        height: 200px;
+        border-radius: 15px;
+        transform: scale(1.3);
+    }
+    .text{
+        padding-left: 30px;
+        .text-quotes{
+            color: white;
+            font-size: 18px;
+            line-height: 1.3;
+            font-family: 'Roboto Condensed', sans-serif;
+            white-space:pre-line;
+        }
+        .text-user{
+            margin-top: 30px;
+            font-size:15px ;
+            color: aliceblue;
+        }
+        .text-position{
+            font-size: 13px;
+            color: antiquewhite;
+        }
+    }
+    .btn{
+        
+        display: flex;
+        // gap: 10px;
+        align-items: center;
+        justify-content: center;
+               
+        .btn-left{
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            stroke: green;
+            fill: green;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px grey;
+            transform: translate(-50%, -50%);
+            left:0;
+            &:hover{
+                background-color: rgb(164, 250, 164);
+                fill: rgb(49, 48, 48);
+                stroke: rgb(80, 79, 79);
+                cursor: pointer;
+            }
+        }
+        .btn-right{
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            stroke: green;
+            fill: green;
+            box-shadow: 0 0 10px grey;
+            transform: translate(50%, -50%);
+            right: 0;
+            border-radius: 50%;
+            background-color: white;
+            &:hover{
+                background-color: rgb(164, 250, 164);
+                fill: rgb(49, 48, 48);
+                stroke: rgb(80, 79, 79);
+                cursor: pointer;
+            }
+        }
+    }
+    .dots{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(250%, 150%);
+        .dot{           
+            background-color: white;
+            border: 1px solid green;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+        }
+        .selected{
+            background-color: green;
+        }
+    }
+}
