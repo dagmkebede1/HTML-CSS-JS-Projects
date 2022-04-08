@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 26rem 1fr 25rem;
+      grid-template-columns: 26rem 1fr 25rem;
+}
+
+.navigation {
+  -webkit-box-shadow: 0 0.1rem 0.5rem grey;
+          box-shadow: 0 0.1rem 0.5rem grey;
+  grid-column: 1/-1;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  background-color: #f3f5f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .logo {
+  color: #1c7ed6;
+  letter-spacing: 0.3rem;
+}
+
+.navigation .search {
+  position: relative;
+}
+
+.navigation .search input {
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 3rem;
+  border-style: none;
+  -webkit-box-shadow: 0 0 0.1rem grey;
+          box-shadow: 0 0 0.1rem grey;
+}
+
+.navigation .search input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+}
+
+.navigation .search input:-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+
+.navigation .search input::-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+
+.navigation .search input::placeholder {
+  font-size: 1.4rem;
+}
+
+.navigation .search input:focus {
+  border-style: none;
+}
+
+.navigation .search svg {
+  width: 3rem;
+  fill: #b4b4b4;
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+}
+
+.navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation nav ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #292a2c;
+}
+
+.navigation nav ul li img {
+  margin-left: 1rem;
+  width: 2.7rem;
+  border-radius: 50%;
+}
+
+.navigation nav ul li svg {
+  fill: gray;
+  width: 2.5rem;
+}
+
+.side-bar {
+  background-color: #f3f5f6;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 0 0.1rem 0.5rem grey;
+          box-shadow: 0 0 0 0.1rem 0.5rem grey;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.side-bar .side-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: auto;
+  padding-top: 1rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.side-bar .side-container .about {
+  margin-top: 20rem;
+}
+
+.side-bar .side-container .about span {
+  font-size: 1.1rem;
+}
+
+.side-bar .side-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.side-bar .side-container ul li {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.side-bar .side-container ul li a {
+  display: block;
+  padding: 1.4rem 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #525557;
+}
+
+.side-bar .side-container ul li a svg {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: middle;
+  width: 2.5rem;
+}
+
+.side-bar .side-container ul li a span {
+  margin-left: 1.5rem;
+}
+
+.side-bar .side-container ul li:nth-child(1) {
+  border-top: 3px solid #1c7ed6;
+  border-width: 20px;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #ebebeb;
+  margin-bottom: 2rem;
+}
+
+.side-bar .side-container ul li:nth-child(1) a span {
+  margin: 0;
+}
+
+.side-bar .side-container ul li:hover a {
+  background-color: #ebebeb;
+  border-radius: 1rem;
+  color: #292a2c;
+  font-weight: 500;
+}
+
+.side-bar .side-container ul li:hover a svg {
+  fill: #4998de;
+}
+
+.main {
+  background-color: #fff;
+  grid-column: 2/-1;
+  overflow: scroll;
+}
+
+.main .main-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.main .main-container .main-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 5rem;
+}
+
+.main .main-container .main-item h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main .main-container .main-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.main .main-container .main-item ul li {
+  list-style: none;
+}
+
+.main .main-container .main-item ul li a {
+  color: #292a2c;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+}
+
+.main .main-container .main-item ul li a:hover {
+  color: #1c7ed6;
+  border-bottom: 2px solid #1c7ed6;
+}
+
+.main .main-container .main-item .content {
+  margin-top: 2rem;
+  border-top: 0.1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.main .main-container .main-item .content p {
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.main .main-container .main-item .content ol {
+  font-size: 1.4rem;
+}
+
+.main .main-container .main-item .content ol li {
+  padding: 1rem 0;
+  color: #525557;
+}
+
+.main .main-container .main-item .content .join {
+  margin-bottom: 2rem;
+}
+
+.main .main-container .main-item .content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1rem 0;
+  background-color: #1c7ed6;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main .main-container .main-item .content a:hover {
+  background-color: #1665ab;
+}
+/*# sourceMappingURL=main.css.map */
