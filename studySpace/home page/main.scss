@@ -38,31 +38,50 @@ body {
     color: $color-primary;
     letter-spacing: 0.3rem;
   }
+  .form {
+    flex: 0 0 20%;
+  }
   .search {
     position: relative;
-    input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+
+    .input {
+      display: block;
+      border: none;
       padding: 1rem;
-      width: 20rem;
-      //   font-size: 1.4rem;
+      color: #292a2c;
+      font-size: 1.4rem;
+      background-color: #dbdbdb;
       border-radius: 3rem;
-      border-style: none;
-      box-shadow: 0 0 0.1rem grey;
+      width: 80%;
+      margin-right: -3.7rem;
+      transition: all 0.8s;
       &::placeholder {
         font-size: 1.4rem;
       }
-      &:focus {
-        border-style: none;
-        // border-bottom: 2px solid black;
+    }
+    .input:focus {
+      width: 100%;
+      outline: none;
+    }
+    .submit {
+      position: relative;
+      border: none;
+      width: 4rem;
+      height: 3rem;
+      background: none;
+      // width: 100%;
+      .search-icon {
+        width: 3rem;
+        fill: rgb(180, 180, 180);
+        height: 3rem;
       }
     }
-    svg {
-      width: 3rem;
-      fill: rgb(180, 180, 180);
-      position: absolute;
-      top: 0.3rem;
-      right: 0;
-    }
   }
+
   nav {
     ul {
       display: flex;
@@ -73,12 +92,17 @@ body {
         list-style: none;
         font-size: 1.4rem;
         color: $text-color;
+      }
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         img {
           margin-left: 1rem;
           width: 2.7rem;
           border-radius: 50%;
         }
-        svg {
+        .setting-icon {
           fill: gray;
           width: 2.5rem;
         }
@@ -89,6 +113,8 @@ body {
 .side-bar {
   background-color: $slid-bar-back;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 0 0 0.1rem 0.5rem grey;
   overflow: scroll;
   scroll-behavior: smooth;
