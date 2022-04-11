@@ -29,9 +29,12 @@ body {
 ////// theme dark
 .side-bar.themedark {
   background-color: #292a2c;
+  .side-container .about {
+    color: #afaeae !important;
+  }
   .side-bar .side-container ul li a:link,
   a:visited {
-    color: #dbdbdb !important;
+    color: #afaeae !important;
     &:hover {
       color: #3d3d3d !important;
     }

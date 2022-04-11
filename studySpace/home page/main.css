@@ -21,9 +21,12 @@ body {
 .side-bar.themedark {
   background-color: #292a2c;
 }
+.side-bar.themedark .side-container .about {
+  color: #afaeae !important;
+}
 .side-bar.themedark .side-bar .side-container ul li a:link,
 .side-bar.themedark a:visited {
-  color: #dbdbdb !important;
+  color: #afaeae !important;
 }
 .side-bar.themedark .side-bar .side-container ul li a:link:hover,
 .side-bar.themedark a:visited:hover {
