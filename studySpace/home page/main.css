@@ -18,6 +18,46 @@ body {
   grid-template-columns: 26rem 1fr 25rem;
 }
 
+.side-bar.themedark {
+  background-color: #292a2c;
+}
+.side-bar.themedark .side-bar .side-container ul li a:link,
+.side-bar.themedark a:visited {
+  color: #dbdbdb !important;
+}
+.side-bar.themedark .side-bar .side-container ul li a:link:hover,
+.side-bar.themedark a:visited:hover {
+  color: #3d3d3d !important;
+}
+
+.navigation.themedark {
+  background-color: #292a2c;
+}
+
+.main.themedark {
+  color: #dbdbdb;
+  background-color: #292a2c;
+}
+.main.themedark .main-container .main-item ul li a:link,
+.main.themedark a:visited {
+  color: #dbdbdb !important;
+}
+.main.themedark .main-container .main-item .content ol li {
+  color: #dbdbdb !important;
+}
+
+.side-bar.themepink {
+  background-color: pink;
+}
+
+.navigation.themepink {
+  background-color: pink;
+}
+
+.main.themepink {
+  background-color: pink;
+}
+
 .navigation {
   box-shadow: 0 0.1rem 0.5rem grey;
   grid-column: 1/-1;
@@ -177,6 +217,37 @@ body {
 .side-bar .side-container ul li:nth-child(1) a:visited span {
   margin: 0;
 }
+.side-bar .side-container .colors {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.side-bar .side-container .grey {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(199, 199, 199);
+}
+.side-bar .side-container .pink {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 3rem;
+  height: 3rem;
+  background-color: pink;
+}
+.side-bar .side-container .dark {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 3rem;
+  height: 3rem;
+  background-color: #3d3d3d;
+}
 
 a:is(:link, :active, :visited).active {
   background-color: #ebebeb;
@@ -216,13 +287,15 @@ a:is(:link, :active, :visited).active svg {
 .main .main-container .main-item ul li {
   list-style: none;
 }
-.main .main-container .main-item ul li a {
+.main .main-container .main-item ul li a:link,
+.main .main-container .main-item ul li a:visited {
   color: #292a2c;
   text-decoration: none;
   padding: 0.5rem 2rem;
   font-size: 2rem;
 }
-.main .main-container .main-item ul li a:hover {
+.main .main-container .main-item ul li a:link:hover,
+.main .main-container .main-item ul li a:visited:hover {
   color: #1c7ed6;
   border-bottom: 2px solid #1c7ed6;
 }

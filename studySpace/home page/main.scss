@@ -4,6 +4,7 @@ $color-primary-tint2: #60a5e2;
 
 $body-color: #e8f2fb;
 $slid-bar-back: #f3f5f6;
+// $slid-bar-back: pink;
 $hover-slide-bar-color: #ebebeb;
 $text-color: #292a2c;
 $color-side-bar: #525557;
@@ -25,11 +26,48 @@ body {
   display: grid;
   grid-template-columns: 26rem 1fr 25rem;
 }
+////// theme dark
+.side-bar.themedark {
+  background-color: #292a2c;
+  .side-bar .side-container ul li a:link,
+  a:visited {
+    color: #dbdbdb !important;
+    &:hover {
+      color: #3d3d3d !important;
+    }
+  }
+}
+.navigation.themedark {
+  background-color: #292a2c;
+}
+.main.themedark {
+  color: #dbdbdb;
+  background-color: #292a2c;
+  .main-container .main-item ul li a:link,
+  a:visited {
+    color: #dbdbdb !important;
+  }
+  .main-container .main-item .content ol li {
+    color: #dbdbdb !important;
+  }
+}
+///// theme pink
+.side-bar.themepink {
+  background-color: pink;
+}
+.navigation.themepink {
+  background-color: pink;
+}
+.main.themepink {
+  background-color: pink;
+}
 .navigation {
   box-shadow: 0 0.1rem 0.5rem grey;
   grid-column: 1/-1;
   padding: 1rem 2rem;
   overflow: hidden;
+  /////SLID BAR HERE
+  ////////////////////////////////////////////////////////////////////
   background-color: $slid-bar-back;
   display: flex;
   justify-content: space-between;
@@ -111,6 +149,7 @@ body {
   }
 }
 .side-bar {
+  /////////////////////////////////////////////////////////////////////
   background-color: $slid-bar-back;
   height: 100vh;
   display: flex;
@@ -188,6 +227,37 @@ body {
         }
       }
     }
+    .colors {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .grey {
+      cursor: pointer;
+      border-radius: 5px;
+      border: 2px solid white;
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(199, 199, 199);
+    }
+    .pink {
+      cursor: pointer;
+      border-radius: 5px;
+      border: 2px solid white;
+      width: 3rem;
+      height: 3rem;
+      background-color: pink;
+    }
+    .dark {
+      cursor: pointer;
+      border-radius: 5px;
+      border: 2px solid white;
+      width: 3rem;
+      height: 3rem;
+      background-color: #3d3d3d;
+    }
   }
 }
 a:is(:link, :active, :visited).active {
@@ -199,7 +269,6 @@ a:is(:link, :active, :visited).active {
     fill: $color-primary-tint;
   }
 }
-
 .main {
   background-color: #fff;
   // background-color: $body-color;
@@ -226,7 +295,8 @@ a:is(:link, :active, :visited).active {
 
         li {
           list-style: none;
-          a {
+          a:link,
+          a:visited {
             &:hover {
               color: #1c7ed6;
               border-bottom: 2px solid $color-primary;
