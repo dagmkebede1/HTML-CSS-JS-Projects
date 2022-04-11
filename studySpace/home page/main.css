@@ -33,7 +33,7 @@ body {
   letter-spacing: 0.3rem;
 }
 .navigation .form {
-  flex: 0 0 20%;
+  flex: 0 0 25%;
 }
 .navigation .search {
   position: relative;
@@ -136,21 +136,34 @@ body {
 .side-bar .side-container ul li {
   transition: all 0.3s;
 }
-.side-bar .side-container ul li a {
+.side-bar .side-container ul li a:link,
+.side-bar .side-container ul li a:visited {
   display: block;
   padding: 1.4rem 2rem;
   transition: all 0.3s;
   text-decoration: none;
   font-size: 1.6rem;
+  font-weight: 500;
   color: #525557;
 }
-.side-bar .side-container ul li a svg {
+.side-bar .side-container ul li a:link svg,
+.side-bar .side-container ul li a:visited svg {
   transition: all 0.3s;
   vertical-align: middle;
   width: 2.5rem;
 }
-.side-bar .side-container ul li a span {
+.side-bar .side-container ul li a:link span,
+.side-bar .side-container ul li a:visited span {
   margin-left: 1.5rem;
+}
+.side-bar .side-container ul li a:hover {
+  background-color: #ebebeb;
+  border-radius: 1rem;
+  color: #292a2c;
+  font-weight: 500;
+}
+.side-bar .side-container ul li a:hover svg {
+  fill: #4998de;
 }
 .side-bar .side-container ul li:nth-child(1) {
   border-top: 3px solid #1c7ed6;
@@ -160,16 +173,18 @@ body {
   background-color: #ebebeb;
   margin-bottom: 2rem;
 }
-.side-bar .side-container ul li:nth-child(1) a span {
+.side-bar .side-container ul li:nth-child(1) a:link span,
+.side-bar .side-container ul li:nth-child(1) a:visited span {
   margin: 0;
 }
-.side-bar .side-container ul li:hover a {
+
+a:is(:link, :active, :visited).active {
   background-color: #ebebeb;
   border-radius: 1rem;
   color: #292a2c;
   font-weight: 500;
 }
-.side-bar .side-container ul li:hover a svg {
+a:is(:link, :active, :visited).active svg {
   fill: #4998de;
 }
 
