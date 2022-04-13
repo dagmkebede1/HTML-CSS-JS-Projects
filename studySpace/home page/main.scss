@@ -28,24 +28,35 @@ body {
 }
 ////// theme dark
 .side-bar.themedark {
-  background-color: #292a2c;
+  background-color: #0d142f;
   .side-container .about {
     color: #afaeae !important;
   }
-  .side-bar .side-container ul li a:link,
+  .side-container ul li a:link,
   a:visited {
-    color: #afaeae !important;
-    &:hover {
-      color: #3d3d3d !important;
+    svg {
+      stroke: #afaeae !important;
     }
+  }
+  .side-container ul li a:hover,
+  a:active {
+    background-color: #d3d1d1;
+    svg {
+      stroke: $text-color !important;
+      fill: $color-primary;
+    }
+  }
+  .side-container {
+    border: none;
+    background-color: #141e46 !important;
   }
 }
 .navigation.themedark {
-  background-color: #292a2c;
+  background-color: #0d142f;
 }
 .main.themedark {
   color: #dbdbdb;
-  background-color: #292a2c;
+  background-color: #0d142f;
   .main-container .main-item ul li a:link,
   a:visited {
     color: #dbdbdb !important;
@@ -57,6 +68,28 @@ body {
 ///// theme pink
 .side-bar.themepink {
   background-color: pink;
+
+  .side-container ul li:nth-child(1) {
+    border: none;
+    padding: 0;
+  }
+  .side-container ul li:nth-child(1) a:link,
+  a:visited {
+    background-color: #fdd4e3;
+    border-radius: 1rem;
+  }
+  .side-container ul li a:hover,
+  a:active {
+    background-color: #e9e9e9;
+    svg {
+      stroke: $text-color !important;
+      fill: $color-primary;
+    }
+  }
+  .side-container {
+    border: none;
+    background-color: #e3afc2 !important;
+  }
 }
 .navigation.themepink {
   background-color: pink;
@@ -65,7 +98,7 @@ body {
   background-color: pink;
 }
 .navigation {
-  box-shadow: 0 0.1rem 0.5rem grey;
+  // box-shadow: 0 0.1rem 0.5rem grey;
   grid-column: 1/-1;
   padding: 1rem 2rem;
   overflow: hidden;
@@ -165,7 +198,7 @@ body {
   }
   ::-webkit-scrollbar-track {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -390,6 +423,7 @@ a:is(:link, :active, :visited).active {
   .container-all {
     display: grid;
     grid-template-columns: 8rem 1fr 25rem;
+    position: relative;
   }
   .navigation {
     .search {
@@ -399,12 +433,15 @@ a:is(:link, :active, :visited).active {
 
   .side-bar {
     /////////////////////////////////////////////////////////////////////
-    background-color: $slid-bar-back;
-    height: 100vh;
+
+    // background-color: $slid-bar-back;
+    background-color: white;
+
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 0 0 0.1rem 0.5rem grey;
-    overflow: scroll;
+    // box-shadow: 0 0 0 0.1rem 0.5rem grey;
+    // border-radius: 1rem;
+    overflow: visible;
     // scrollbar-width: 6px;
     scroll-behavior: smooth;
     scrollbar-color: rgb(158, 158, 158) $hover-slide-bar-color;
@@ -423,13 +460,16 @@ a:is(:link, :active, :visited).active {
     }
 
     .side-container {
+      border: 1px solid $slid-bar-back;
+      border-radius: 1rem;
       position: relative;
       display: flex;
       flex-direction: column;
       gap: auto;
-      padding-top: 1rem;
-      width: 95%;
-      margin: 0 auto;
+      transform: translateY(-7%);
+      width: 80%;
+      margin: 1rem auto 0 auto;
+      height: 60rem;
       .about {
         display: none;
         margin-top: 20rem;
@@ -448,6 +488,7 @@ a:is(:link, :active, :visited).active {
 
         li {
           transition: all 0.3s;
+          margin: 0;
 
           a:link,
           a:visited {
@@ -462,6 +503,8 @@ a:is(:link, :active, :visited).active {
               transition: all 0.3s;
               vertical-align: middle;
               width: 2.5rem;
+              // fill: #afaeae;
+              stroke: #5f5f5f;
             }
             span {
               display: none;
@@ -478,13 +521,13 @@ a:is(:link, :active, :visited).active {
             }
           }
           &:nth-child(1) {
-            border-top: 3px solid $color-primary;
-            border-width: 20px;
+            // border-top: 3px solid $color-primary;
+            // border-width: 20px;
             // align-self: center;
-            border-radius: 1rem;
+            // border-radius: 1rem;
             text-align: center;
             background-color: $hover-slide-bar-color;
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
             a:link,
             a:visited {
               margin: 0;

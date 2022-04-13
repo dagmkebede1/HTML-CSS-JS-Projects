@@ -24,9 +24,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 .container {
-  margin-top: 20rem;
+  margin-top: 10rem;
   .login {
-    max-width: 40rem;
+    max-width: 35rem;
     height: 37rem;
     margin: 0 auto;
     background-color: $slid-bar-back;
@@ -62,7 +62,7 @@ body {
         padding: 0.8rem 1rem;
         border-radius: 1rem;
         border: none;
-        box-shadow: inset 0 0 1px grey;
+        box-shadow: inset 0 0 0 1px grey;
         color: #757575;
         font-size: 1.4rem;
         font-weight: 500;
@@ -84,12 +84,12 @@ body {
         margin-top: 1rem;
         font-family: inherit;
         color: #fff;
-        background-color: #495057;
+        background-color: #1971c1;
         // background-color: #1c7ed6;
         border-radius: 0.3rem;
         transition: all 0.3s;
         &:hover {
-          background-color: #1971c1;
+          background-color: #0663b9;
         }
       }
     }
