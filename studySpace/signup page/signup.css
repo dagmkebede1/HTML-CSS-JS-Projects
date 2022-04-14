@@ -191,6 +191,19 @@
   outline: none;
 }
 
+.sign-up-box form .input-box select {
+  padding: 0.4rem 0.1rem;
+  font-size: 0.9rem;
+  color: #42484e;
+  border: 1px solid #c0c0c0;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.sign-up-box form .input-box select option {
+  text-align: center;
+}
+
 .sign-up-box form .input-box .password {
   display: -webkit-box;
   display: -ms-flexbox;
