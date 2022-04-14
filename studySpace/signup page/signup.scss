@@ -36,15 +36,35 @@ $slid-bar-back: #f3f5f6;
     padding: 3rem 0;
     .profile-img {
       display: flex;
-      flex-direction: column;
+      //   flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 0.7rem;
-      label {
-        font-size: 1rem;
+      //   label {
+      //     font-size: 1rem;
+      //   }
+      svg {
+        stroke: $text-color-grey;
+        width: 2rem;
+        height: 2rem;
+      }
+      input[type="file"]::file-selector-button {
+        border: none;
+        cursor: pointer;
+        padding: 0.4rem 0.5rem;
+        color: $text-color-grey;
+        border-radius: 0.2em;
+        background-color: rgb(228, 228, 228);
+        transition: 0.3s;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      input[type="file"]::file-selector-button:hover {
+        background-color: rgb(202, 202, 202);
       }
       input {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: #1665ab;
       }
     }

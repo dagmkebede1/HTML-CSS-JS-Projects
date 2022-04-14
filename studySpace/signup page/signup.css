@@ -49,10 +49,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,12 +58,31 @@
   gap: 0.7rem;
 }
 
-.sign-up-box form .profile-img label {
-  font-size: 1rem;
+.sign-up-box form .profile-img svg {
+  stroke: #42484e;
+  width: 2rem;
+  height: 2rem;
+}
+
+.sign-up-box form .profile-img input[type="file"]::file-selector-button {
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  color: #42484e;
+  border-radius: 0.2em;
+  background-color: #e4e4e4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sign-up-box form .profile-img input[type="file"]::file-selector-button:hover {
+  background-color: #cacaca;
 }
 
 .sign-up-box form .profile-img input {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #1665ab;
 }
 
