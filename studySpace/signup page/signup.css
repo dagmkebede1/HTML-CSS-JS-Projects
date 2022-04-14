@@ -16,6 +16,9 @@
   background-color: #f3f5f6;
   max-width: 35rem;
   margin: 5rem auto;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 0 4px 0 grey;
+          box-shadow: 0 0 4px 0 grey;
 }
 
 .sign-up-box h2 {
@@ -85,10 +88,12 @@
 .sign-up-box form .input-box input {
   padding: 0.3rem 0;
   font-size: 0.9rem;
+  color: #42484e;
 }
 
 .sign-up-box form .input-box label {
   font-size: 1rem;
+  color: #42484e;
 }
 
 .sign-up-box form .input-box .firstname {
