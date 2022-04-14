@@ -107,6 +107,13 @@
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sign-up-box form .input-box input:hover,
+.sign-up-box form .input-box input:focus {
+  border: 1px solid #2e2e2e;
 }
 
 .sign-up-box form .input-box label {
@@ -213,10 +220,17 @@
   border: 1px solid #c0c0c0;
   background-color: white;
   border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sign-up-box form .input-box select option {
   text-align: center;
+}
+
+.sign-up-box form .input-box select:hover,
+.sign-up-box form .input-box select:active {
+  border: 1px solid #2e2e2e;
 }
 
 .sign-up-box form .input-box .password {

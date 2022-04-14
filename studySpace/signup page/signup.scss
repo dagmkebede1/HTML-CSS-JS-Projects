@@ -82,6 +82,11 @@ $slid-bar-back: #f3f5f6;
         color: $text-color-grey;
         border: 1px solid #c0c0c0;
         border-radius: 0.5rem;
+        transition: all 0.3s;
+      }
+      input:hover,
+      input:focus {
+        border: 1px solid rgb(46, 46, 46);
       }
       label {
         font-size: 0.9rem;
@@ -146,10 +151,14 @@ $slid-bar-back: #f3f5f6;
         border: 1px solid #c0c0c0;
         background-color: white;
         border-radius: 0.5rem;
-
+        transition: all 0.3s;
         option {
           text-align: center;
         }
+      }
+      select:hover,
+      select:active {
+        border: 1px solid rgb(46, 46, 46);
       }
       .password {
         display: flex;
