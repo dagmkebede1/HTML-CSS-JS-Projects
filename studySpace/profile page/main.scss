@@ -308,6 +308,8 @@ a:is(:link, :active, :visited).active {
     height: 50rem;
     background-color: $slid-bar-back;
     $lightgrey1: #e9ebeb;
+
+    // this profile css
     .main-item-profile {
       margin-top: 1rem;
       .box {
@@ -411,6 +413,7 @@ a:is(:link, :active, :visited).active {
         }
       }
     }
+    // the end
   }
 }
 //MEDIA  QUERY
