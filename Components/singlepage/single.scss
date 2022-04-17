@@ -1,0 +1,27 @@
+.navigation {
+  ul {
+    display: flex;
+    // background-color: aliceblue;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+    li {
+      list-style: none;
+      a:link,
+      a:visited {
+        padding: 0.5rem;
+        text-decoration: none;
+        font-family: sans-serif;
+        // background-color: aliceblue;
+        // outline: 1px solid blueviolet;
+        // border-radius: 1rem;
+      }
+      a:hover,
+      a:active {
+        background-color: aliceblue;
+        outline: 1px solid blueviolet;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
