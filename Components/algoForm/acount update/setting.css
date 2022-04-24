@@ -245,4 +245,35 @@ p {
 .password_form .submit-div input[type=submit]:hover,
 .password_form .submit-div input[type=submit]:active {
   background-color: #1665ab;
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-item_useraccount {
+    max-width: 100%;
+  }
+  .main-item_useraccount .title {
+    font-size: 1.2rem;
+  }
+  .main-item_useraccount .profile_form {
+    max-width: 70%;
+  }
+  .main-item_useraccount .profile_form .profile-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-item_useraccount .profile_form .profile-img input[type=file] {
+    position: relative;
+    transform: translateX(-30%);
+  }
+  .main-item_useraccount .simple-line {
+    margin: 2rem auto;
+    width: 60%;
+  }
+  .main-item_useraccount .password_form {
+    max-width: 70%;
+  }
 }/*# sourceMappingURL=setting.css.map */

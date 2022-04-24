@@ -242,3 +242,32 @@ p {
     }
   }
 }
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 50%;
+  }
+  .main-item_useraccount {
+    max-width: 100%;
+    .title {
+      font-size: 1.2rem;
+    }
+    .profile_form {
+      max-width: 70%;
+      .profile-img {
+        display: flex;
+        flex-direction: column;
+        input[type="file"] {
+          position: relative;
+          transform: translateX(-30%);
+        }
+      }
+    }
+    .simple-line {
+      margin: 2rem auto;
+      width: 60%;
+    }
+    .password_form {
+      max-width: 70%;
+    }
+  }
+}
