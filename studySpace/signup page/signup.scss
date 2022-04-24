@@ -17,7 +17,6 @@ $slid-bar-back: #f3f5f6;
   height: 100vh;
 }
 .sign-up-box {
-  //   background-color: $slid-bar-back;
   background-color: #fff;
   max-width: 35rem;
   margin: 5rem auto;
@@ -37,13 +36,10 @@ $slid-bar-back: #f3f5f6;
     padding: 3rem 0;
     .profile-img {
       display: flex;
-      //   flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 0.7rem;
-      //   label {
-      //     font-size: 1rem;
-      //   }
+
       svg {
         stroke: $text-color-grey;
         width: 2rem;
@@ -75,116 +71,47 @@ $slid-bar-back: #f3f5f6;
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      input {
-        width: 100%;
-        padding: 0.4rem 0.1rem;
-        font-size: 0.9rem;
-        color: $text-color-grey;
-        border: 1px solid #c0c0c0;
-        border-radius: 0.5rem;
-        transition: all 0.3s;
-      }
-      input:hover,
-      input:focus {
-        border: 1px solid rgb(46, 46, 46);
-      }
-      label {
-        font-size: 0.9rem;
-        color: $text-color-grey;
-      }
-      .firstname {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        input {
-          text-align: center;
-          &:focus {
-            font-size: 0.9rem;
-            outline: none;
-          }
-        }
-      }
-      .lastname {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        input {
-          text-align: center;
-          &:focus {
-            font-size: 0.9rem;
-            outline: none;
-          }
-        }
-      }
-      .email {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        input {
-          text-align: center;
-          &:focus {
-            font-size: 0.9rem;
-            outline: none;
-          }
-        }
-      }
-      .gender {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        input {
-          text-align: center;
-          &:focus {
-            font-size: 0.9rem;
-            outline: none;
-          }
-        }
-      }
-      select {
-        padding: 0.4rem 0.1rem;
-        font-size: 0.9rem;
-        color: $text-color-grey;
-        border: 1px solid #c0c0c0;
-        background-color: white;
-        border-radius: 0.5rem;
-        transition: all 0.3s;
-        option {
-          text-align: center;
-        }
-      }
-      select:hover,
-      select:active {
-        border: 1px solid rgb(46, 46, 46);
-      }
-      .password {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
 
-        input {
-          text-align: center;
-          &:focus {
-            font-size: 0.9rem;
-            outline: none;
-          }
-        }
-      }
-      .passwordConfirm {
+      .algo-input-div {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.4rem;
+        label {
+          font-size: 0.9rem;
+          color: $text-color-grey;
+        }
         input {
           text-align: center;
-          &:focus {
+          width: 100%;
+          padding: 0.4rem 0.1rem;
+          font-size: 0.9rem;
+          color: $text-color-grey;
+          border: 1px solid #c0c0c0;
+          border-radius: 0.5rem;
+          transition: all 0.3s;
+          &:focus,
+          &:hover {
             font-size: 0.9rem;
+            border: 1px solid rgb(46, 46, 46);
             outline: none;
           }
+        }
+        select {
+          padding: 0.4rem 0.1rem;
+          font-size: 0.9rem;
+          color: $text-color-grey;
+          border: 1px solid #c0c0c0;
+          background-color: white;
+          border-radius: 0.5rem;
+          transition: all 0.3s;
+          option {
+            text-align: center;
+          }
+        }
+        select:hover,
+        select:active {
+          border: 1px solid rgb(46, 46, 46);
         }
       }
     }
