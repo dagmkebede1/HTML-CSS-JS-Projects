@@ -6,7 +6,7 @@ body {
 }
 
 .chat {
-  width: 300px;
+  width: 600px;
   border: solid 1px #eee;
   display: flex;
   flex-direction: column;
