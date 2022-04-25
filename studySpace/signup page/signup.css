@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
@@ -16,72 +17,89 @@
   max-width: 35rem;
   margin: 5rem auto;
   border-radius: 0.7rem;
-  box-shadow: 0 0 4px 0 grey;
+  -webkit-box-shadow: 0 0 4px 0 grey;
+          box-shadow: 0 0 4px 0 grey;
 }
+
 .sign-up-box h2 {
   padding-top: 1rem;
   text-align: center;
   color: #1c7ed6;
 }
+
 .sign-up-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2rem;
   padding: 3rem 0;
 }
+
 .sign-up-box form .profile-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.7rem;
 }
+
 .sign-up-box form .profile-img svg {
   stroke: #42484e;
   width: 2rem;
   height: 2rem;
 }
-.sign-up-box form .profile-img input[type=file]::-webkit-file-upload-button {
+
+.sign-up-box form .profile-img input[type="file"]::file-selector-button {
   border: none;
   cursor: pointer;
   padding: 0.4rem 0.5rem;
   color: #42484e;
   border-radius: 0.2em;
-  background-color: rgb(228, 228, 228);
+  background-color: #e4e4e4;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 0.9rem;
   font-weight: 600;
 }
-.sign-up-box form .profile-img input[type=file]::file-selector-button {
-  border: none;
-  cursor: pointer;
-  padding: 0.4rem 0.5rem;
-  color: #42484e;
-  border-radius: 0.2em;
-  background-color: rgb(228, 228, 228);
-  transition: 0.3s;
-  font-size: 0.9rem;
-  font-weight: 600;
+
+.sign-up-box form .profile-img input[type="file"]::file-selector-button:hover {
+  background-color: #cacaca;
 }
-.sign-up-box form .profile-img input[type=file]::-webkit-file-upload-button:hover {
-  background-color: rgb(202, 202, 202);
-}
-.sign-up-box form .profile-img input[type=file]::file-selector-button:hover {
-  background-color: rgb(202, 202, 202);
-}
+
 .sign-up-box form .profile-img input {
   font-size: 0.8rem;
   color: #1665ab;
 }
+
 .sign-up-box form .input-box {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .sign-up-box form .input-box input {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -89,68 +107,112 @@
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .sign-up-box form .input-box input:hover,
 .sign-up-box form .input-box input:focus {
-  border: 1px solid rgb(46, 46, 46);
+  border: 1px solid #2e2e2e;
 }
+
 .sign-up-box form .input-box label {
   font-size: 0.9rem;
   color: #42484e;
 }
+
 .sign-up-box form .input-box .firstname {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .firstname input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .firstname input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form .input-box .lastname {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .lastname input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .lastname input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form .input-box .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .email input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .email input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form .input-box .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .gender input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .gender input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form .input-box select {
   padding: 0.4rem 0.1rem;
   font-size: 0.9rem;
@@ -158,41 +220,65 @@
   border: 1px solid #c0c0c0;
   background-color: white;
   border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .sign-up-box form .input-box select option {
   text-align: center;
 }
+
 .sign-up-box form .input-box select:hover,
 .sign-up-box form .input-box select:active {
-  border: 1px solid rgb(46, 46, 46);
+  border: 1px solid #2e2e2e;
 }
+
 .sign-up-box form .input-box .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .password input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .password input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form .input-box .passwordConfirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .passwordConfirm input {
   text-align: center;
 }
+
 .sign-up-box form .input-box .passwordConfirm input:focus {
   font-size: 0.9rem;
   outline: none;
 }
+
 .sign-up-box form button {
   cursor: pointer;
   border: none;
@@ -202,9 +288,11 @@
   color: #fff;
   background-color: #1c7ed6;
 }
+
 .sign-up-box form button:hover {
   background-color: #1971c1;
 }
+
 .sign-up-box footer {
   text-align: center;
   color: #42484e;
@@ -214,8 +302,11 @@
 
 @media screen and (max-width: 500px) {
   .sign-up-box form .input-box {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-}/*# sourceMappingURL=signup.css.map */
+}
+/*# sourceMappingURL=signup.css.map */
