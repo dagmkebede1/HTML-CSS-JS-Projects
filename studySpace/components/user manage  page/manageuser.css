@@ -6,8 +6,12 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +32,7 @@ table {
 }
 
 table thead th {
-  background-color: #1498EF;
+  background-color: #1498ef;
   color: white;
 }
 
@@ -67,16 +71,22 @@ table td .delete:hover {
 
 table tbody tr:hover {
   background-color: aliceblue;
-  color: #1498EF;
+  color: #1498ef;
   cursor: pointer;
   text-decoration: underline;
 }
 
 table tbody tr:nth-child(odd) {
-  background-color: #FAF7F5;
+  background-color: #faf7f5;
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #DAE0E3;
+  background-color: #dae0e3;
 }
-/*# sourceMappingURL=main.css.map */
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=manageuser.css.map */

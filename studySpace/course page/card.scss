@@ -4,6 +4,23 @@
 }
 $some-color: #4ea1ee;
 $text-color: rgb(83, 83, 83);
+$text-color2: rgb(61, 60, 60);
+
+.user-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text-color2;
+}
+.available-div {
+  color: $text-color2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
@@ -38,7 +55,7 @@ $text-color: rgb(83, 83, 83);
     .img {
       position: relative;
       width: 100%;
-      height: 12rem;
+      height: 10rem;
       background-size: contain;
       background-blend-mode: overlay;
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
@@ -46,17 +63,26 @@ $text-color: rgb(83, 83, 83);
     }
     .title {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       // color: rgb(83, 83, 83);
-      color: #2998ff;
+      // color: #2998ff;
+      color: rgb(100, 100, 100);
       font-weight: 600;
     }
     .course-about {
-      font-size: 0.9rem;
-      color: grey;
-      text-align: center;
-      padding: 0 0.2rem;
-      line-height: 1.2rem;
+      p {
+        font-size: 0.8rem;
+        color: grey;
+        text-align: center;
+        padding: 0 0.2rem;
+        line-height: 1.2rem;
+      }
+      .line {
+        width: 50%;
+        margin: 0 auto;
+        height: 1px;
+        background-color: grey;
+      }
     }
     .instructor {
       display: flex;

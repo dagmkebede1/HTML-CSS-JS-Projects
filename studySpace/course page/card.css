@@ -3,6 +3,23 @@
   font-family: "Inter", sans-serif;
 }
 
+.user-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(61, 60, 60);
+}
+
+.available-div {
+  color: rgb(61, 60, 60);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
@@ -39,23 +56,29 @@
 .card .front .img {
   position: relative;
   width: 100%;
-  height: 12rem;
+  height: 10rem;
   background-size: contain;
   background-blend-mode: overlay;
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(web.jpg);
 }
 .card .front .title {
   text-align: center;
-  font-size: 1.2rem;
-  color: #2998ff;
+  font-size: 1.1rem;
+  color: rgb(100, 100, 100);
   font-weight: 600;
 }
-.card .front .course-about {
-  font-size: 0.9rem;
+.card .front .course-about p {
+  font-size: 0.8rem;
   color: grey;
   text-align: center;
   padding: 0 0.2rem;
   line-height: 1.2rem;
+}
+.card .front .course-about .line {
+  width: 50%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: grey;
 }
 .card .front .instructor {
   display: flex;
