@@ -99,23 +99,28 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-<<<<<<< HEAD
+
 .sign-up-box form .input-box .algo-input-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.4rem;
 }
+
 .sign-up-box form .input-box .algo-input-div label {
   font-size: 0.9rem;
   color: #42484e;
 }
+
 .sign-up-box form .input-box .algo-input-div input {
   text-align: center;
-=======
-
-.sign-up-box form .input-box input {
->>>>>>> 58d80096c5b4b9883696094fcb26ce47145888c3
   width: 100%;
   padding: 0.4rem 0.1rem;
   font-size: 0.9rem;
@@ -125,119 +130,14 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-<<<<<<< HEAD
+
 .sign-up-box form .input-box .algo-input-div input:focus, .sign-up-box form .input-box .algo-input-div input:hover {
   font-size: 0.9rem;
-  border: 1px solid rgb(46, 46, 46);
-  outline: none;
-}
-.sign-up-box form .input-box .algo-input-div select {
-=======
-
-.sign-up-box form .input-box input:hover,
-.sign-up-box form .input-box input:focus {
   border: 1px solid #2e2e2e;
-}
-
-.sign-up-box form .input-box label {
-  font-size: 0.9rem;
-  color: #42484e;
-}
-
-.sign-up-box form .input-box .firstname {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .firstname input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .firstname input:focus {
-  font-size: 0.9rem;
   outline: none;
 }
 
-.sign-up-box form .input-box .lastname {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .lastname input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .lastname input:focus {
-  font-size: 0.9rem;
-  outline: none;
-}
-
-.sign-up-box form .input-box .email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .email input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .email input:focus {
-  font-size: 0.9rem;
-  outline: none;
-}
-
-.sign-up-box form .input-box .gender {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .gender input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .gender input:focus {
-  font-size: 0.9rem;
-  outline: none;
-}
-
-.sign-up-box form .input-box select {
->>>>>>> 58d80096c5b4b9883696094fcb26ce47145888c3
+.sign-up-box form .input-box .algo-input-div select {
   padding: 0.4rem 0.1rem;
   font-size: 0.9rem;
   color: #42484e;
@@ -247,72 +147,16 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-<<<<<<< HEAD
+
 .sign-up-box form .input-box .algo-input-div select option {
   text-align: center;
 }
+
 .sign-up-box form .input-box .algo-input-div select:hover,
 .sign-up-box form .input-box .algo-input-div select:active {
-  border: 1px solid rgb(46, 46, 46);
-}
-=======
-
-.sign-up-box form .input-box select option {
-  text-align: center;
-}
-
-.sign-up-box form .input-box select:hover,
-.sign-up-box form .input-box select:active {
   border: 1px solid #2e2e2e;
 }
 
-.sign-up-box form .input-box .password {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .password input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .password input:focus {
-  font-size: 0.9rem;
-  outline: none;
-}
-
-.sign-up-box form .input-box .passwordConfirm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.4rem;
-}
-
-.sign-up-box form .input-box .passwordConfirm input {
-  text-align: center;
-}
-
-.sign-up-box form .input-box .passwordConfirm input:focus {
-  font-size: 0.9rem;
-  outline: none;
-}
-
->>>>>>> 58d80096c5b4b9883696094fcb26ce47145888c3
 .sign-up-box form button {
   cursor: pointer;
   border: none;
