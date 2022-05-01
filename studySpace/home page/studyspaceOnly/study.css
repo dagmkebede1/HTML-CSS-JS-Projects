@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,24 +19,14 @@ body {
 }
 
 .createspace {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 70rem;
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
-
 .createspace p {
   text-align: center;
   font-size: 3rem;
@@ -46,36 +35,21 @@ body {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
   width: 100%;
 }
-
 form .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-
 form .title label {
   font-size: 1.8rem;
 }
-
 form .title input {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -83,31 +57,21 @@ form .title input {
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 form .title input:hover,
 form .title input:focus {
   border: 1px solid #2e2e2e;
   outline: none;
 }
-
 form .firstp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
-
 form .firstp label {
   font-size: 1.8rem;
 }
-
 form .firstp textarea {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -115,34 +79,22 @@ form .firstp textarea {
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 form .firstp textarea:hover,
 form .firstp textarea:focus {
   border: 1px solid #2e2e2e;
   outline: none;
 }
-
 form .lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 form .lists label {
   font-size: 1.8rem;
 }
-
 form .lists input {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -150,31 +102,21 @@ form .lists input {
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 form .lists input:hover,
 form .lists input:focus {
   border: 1px solid #2e2e2e;
   outline: none;
 }
-
 form .secondp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
-
 form .secondp label {
   font-size: 1.8rem;
 }
-
 form .secondp textarea {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -182,37 +124,23 @@ form .secondp textarea {
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 form .secondp textarea:hover,
 form .secondp textarea:focus {
   border: 1px solid #2e2e2e;
   outline: none;
 }
-
 form .meeting-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 form .meeting-link label {
   font-size: 1.8rem;
 }
-
 form .meeting-link input {
   width: 100%;
   padding: 0.4rem 0.1rem;
@@ -220,29 +148,19 @@ form .meeting-link input {
   color: #42484e;
   border: 1px solid #c0c0c0;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 form .meeting-link input:hover,
 form .meeting-link input:focus {
   border: 1px solid #2e2e2e;
   outline: none;
 }
-
 form .submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
-
-form .submit input[type="submit"] {
+form .submit input[type=submit] {
   cursor: pointer;
   border: none;
   width: 15rem;
@@ -252,28 +170,18 @@ form .submit input[type="submit"] {
   color: #fff;
   background-color: #1c7ed6;
 }
-
-form .submit input[type="submit"]:hover,
-form .submit input[type="submit"]:focus {
+form .submit input[type=submit]:hover,
+form .submit input[type=submit]:focus {
   outline: none;
   border: none;
   background-color: #0663b9;
 }
 
 .main-item-space {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   padding: 5rem;
 }
@@ -285,12 +193,8 @@ form .submit input[type="submit"]:focus {
 }
 
 .main-item-space ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -315,13 +219,8 @@ form .submit input[type="submit"]:focus {
 .main-item-space .content {
   margin-top: 2rem;
   border-top: 0.1px solid grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -345,24 +244,17 @@ form .submit input[type="submit"]:focus {
 }
 
 .main-item-space .content a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 20rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-decoration: none;
   font-size: 1.6rem;
   color: white;
   padding: 1rem 0;
   background-color: #1c7ed6;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -372,24 +264,17 @@ form .submit input[type="submit"]:focus {
 
 .main-item-space .content .delete:link,
 .main-item-space .content .delete:visited {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 20rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-decoration: none;
   font-size: 1.6rem;
   color: white;
   padding: 1rem 0;
-  background-color: #b30e0e;
+  background-color: rgb(179, 14, 14);
   border-radius: 1rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -400,10 +285,7 @@ form .submit input[type="submit"]:focus {
 
 @media screen and (max-width: 800px) {
   .main-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-/*# sourceMappingURL=study.css.map */
+}/*# sourceMappingURL=study.css.map */

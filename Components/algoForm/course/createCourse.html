@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create Course or Edit</title>
+    <link rel="stylesheet" href="createCourse.css" />
+  </head>
+  <body>
+    <div class="course-form-container">
+      <h2>Course Create Form</h2>
+      <form action="">
+        <div class="photo-cont">
+          <label class="file-label" for="photo"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+              /></svg
+          ></label>
+          <input name="photo" class="photo" id="photo" type="file" />
+        </div>
+        <div class="title-cont">
+          <label for="title">Title</label>
+          <input name="title" class="algo-input" id="title" type="text" />
+        </div>
+        <div class="price-cont">
+          <label for="price">Price</label>
+          <input name="price" class="algo-input" id="price" type="number" />
+        </div>
+        <div class="desc-cont">
+          <label for="description">Description</label>
+          <textarea
+            class="algo-input"
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="inst-cont">
+          <label for="instructor">Course Instructor</label>
+          <input
+            name="instructor"
+            class="algo-input"
+            id="instructor"
+            type="text"
+          />
+        </div>
+        <div class="submit-cont">
+          <input class="submit" type="submit" value="CREATE" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
