@@ -19,28 +19,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.apply:link,
-.apply:visited {
-  padding: 0.8rem 2rem;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 500;
 
-  background-color: white;
-  color: #5643fa;
-  outline: 1px solid #5643fa;
-  border-radius: 3rem;
-  transition: all 0.3s;
-
-  &:hover,
-  &:active {
-    background-color: #5643fa;
-    color: white;
-    outline: 1px solid white;
-    transition: all 0.3s;
-    transform: scale(1.1);
-  }
-}
 .down {
   margin-top: 7rem;
 }
@@ -75,13 +54,18 @@ body {
       color: white;
       display: block;
     }
+    p {
+      font-size: 2rem;
+      color: white;
+      font-weight: 300;
+    }
   }
 }
 .about {
   background-color: hsla(246, 95%, 62%, 0.041);
   .overview {
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     padding: 4rem 0 0 0;
   }
@@ -90,7 +74,7 @@ body {
       font-size: 1.8rem;
       font-weight: 500;
     }
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     padding: 2rem 0 4rem 0;
     font-size: 1.6rem;
@@ -99,13 +83,13 @@ body {
   }
 }
 .objective {
-  width: 80%;
+  width: 70%;
   margin-top: 3rem;
   .experty {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 300;
   }
   .expert-list {
     p {
@@ -114,8 +98,9 @@ body {
       font-size: 1.6rem;
       padding: 1rem 0;
       svg {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
+        stroke: #5643fa;
       }
     }
   }
@@ -129,8 +114,8 @@ body {
   // justify-content: center;
   gap: 1rem;
   label {
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 2.5rem;
+    font-weight: 400;
     text-align: center;
     color: #5643fa;
   }
@@ -138,6 +123,8 @@ body {
     border-radius: 2rem;
     border: 1px solid rgb(175, 175, 175);
     padding: 1rem;
+    font-size: 1.8rem;
+    color: $text-color;
   }
   textarea:hover,
   textarea:focus {
@@ -156,4 +143,8 @@ body {
   outline: 1px solid #5643fa;
   border-radius: 3rem;
   transition: all 0.3s;
+}
+.apply-btn:hover {
+  background-color: #5643fa;
+  color: white;
 }
