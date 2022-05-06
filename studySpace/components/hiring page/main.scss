@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+$primary: #1498ef;
+$forodd: #faf7f5;
+$foreven: #dae0e3;
+$hover: #2d31fa;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.enrol-approval-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  margin-top: 100px;
+  text-align: left;
+  width: auto;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 5px grey;
+  thead th {
+    background-color: #8a39e1;
+    color: white;
+  }
+  th {
+    padding: 10px 20px;
+  }
+  td {
+    a:link,
+    a:visited {
+      text-decoration: none;
+      padding: 7px 20px;
+      font-weight: 500;
+      color: #2c3333;
+    }
+  }
+  tbody tr:hover {
+    background-color: white;
+    a {
+      color: black;
+    }
+  }
+  .action {
+    display: flex;
+    gap: 1rem;
+    a:link,
+    a:visited {
+      display: flex;
+      gap: 0.2rem;
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    .approve:link,
+    .approve:visited {
+      svg {
+        stroke: darkgreen;
+      }
+      span {
+        color: darkgreen;
+      }
+    }
+    .approve:hover,
+    .approve:active {
+      svg {
+        stroke: green;
+      }
+      span {
+        color: green;
+      }
+    }
+    .reject:link,
+    .reject:visited {
+      svg {
+        stroke: rgb(168, 8, 8);
+      }
+      span {
+        color: rgb(180, 9, 9);
+      }
+    }
+    .reject:hover,
+    .reject:active {
+      svg {
+        stroke: red;
+      }
+      span {
+        color: red;
+      }
+    }
+  }
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $forodd;
+}
+tbody tr:nth-child(even) {
+  background-color: $foreven;
+}
