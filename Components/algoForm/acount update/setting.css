@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
@@ -13,16 +12,9 @@ html {
 
 .main-item_useraccount {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -34,104 +26,84 @@ html {
   color: #1665ab;
   height: 10rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #e9ebeb;
 }
 
 .account_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .profile_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   width: 40rem;
   gap: 3rem;
 }
-
 .profile_form .profile-img {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
-
 .profile_form .profile-img img {
   z-index: 9999;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
 }
-
-.profile_form .profile-img input[type="file"]::file-selector-button {
+.profile_form .profile-img input[type=file]::-webkit-file-upload-button {
   border: none;
   cursor: pointer;
   padding: 1rem;
   color: #42484e;
   border-radius: 1rem;
-  background-color: #e4e4e4;
+  background-color: rgb(228, 228, 228);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
-.profile_form .profile-img input[type="file"]::file-selector-button:hover {
-  background-color: #cacaca;
+.profile_form .profile-img input[type=file]::file-selector-button {
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  color: #42484e;
+  border-radius: 1rem;
+  background-color: rgb(228, 228, 228);
+  transition: 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.profile_form .profile-img input[type=file]::-webkit-file-upload-button:hover {
+  background-color: rgb(202, 202, 202);
   background-image: none;
 }
-
+.profile_form .profile-img input[type=file]::file-selector-button:hover {
+  background-color: rgb(202, 202, 202);
+  background-image: none;
+}
 .profile_form .profile-img input {
   position: absolute;
   left: 9.3rem;
   font-size: 1rem;
   color: #1665ab;
 }
-
 .profile_form .algo-input-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .profile_form .algo-input-div label {
   font-size: 1.2rem;
   color: #42484e;
 }
-
 .profile_form .algo-input-div input {
   text-align: center;
   width: 100%;
@@ -141,17 +113,14 @@ html {
   border: 1px solid #c0c0c0;
   background-color: #e9ebeb;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .profile_form .algo-input-div input:focus, .profile_form .algo-input-div input:hover {
   font-size: 1.5rem;
-  border: 1px solid #2e2e2e;
+  border: 1px solid rgb(46, 46, 46);
   outline: none;
   background-color: white;
 }
-
 .profile_form .algo-input-div select {
   padding: 0.8rem;
   font-size: 1.5rem;
@@ -160,31 +129,22 @@ html {
   background-color: #e9ebeb;
   width: 50%;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .profile_form .algo-input-div select option {
   text-align: center;
 }
-
 .profile_form .algo-input-div select:hover,
 .profile_form .algo-input-div select:active {
   background-color: white;
-  border: 1px solid #2e2e2e;
+  border: 1px solid rgb(46, 46, 46);
   outline: none;
 }
-
 .profile_form .submit-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
-.profile_form .submit-div input[type="submit"] {
+.profile_form .submit-div input[type=submit] {
   cursor: pointer;
   width: 14rem;
   padding: 0.8rem;
@@ -194,12 +154,10 @@ html {
   border: none;
   outline: none;
   border-radius: 30rem;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-
-.profile_form .submit-div input[type="submit"]:hover,
-.profile_form .submit-div input[type="submit"]:active {
+.profile_form .submit-div input[type=submit]:hover,
+.profile_form .submit-div input[type=submit]:active {
   background-color: #1665ab;
 }
 
@@ -207,7 +165,7 @@ html {
   margin: 4rem 0 2rem 0;
   width: 70rem;
   height: 2px;
-  background-color: #a1a1a1;
+  background-color: rgb(161, 161, 161);
 }
 
 p {
@@ -219,32 +177,19 @@ p {
 
 .password_form {
   margin: 2rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 60%;
   gap: 2rem;
 }
-
 .password_form .algo-input-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .password_form .algo-input-div label {
   font-size: 1.2rem;
   color: #42484e;
 }
-
 .password_form .algo-input-div input {
   text-align: center;
   width: 100%;
@@ -254,17 +199,14 @@ p {
   border: 1px solid #c0c0c0;
   background-color: #e9ebeb;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .password_form .algo-input-div input:focus, .password_form .algo-input-div input:hover {
   font-size: 1.5rem;
-  border: 1px solid #2e2e2e;
+  border: 1px solid rgb(46, 46, 46);
   outline: none;
   background-color: white;
 }
-
 .password_form .algo-input-div select {
   padding: 0.8rem;
   font-size: 1.5rem;
@@ -273,31 +215,22 @@ p {
   background-color: #e9ebeb;
   width: 50%;
   border-radius: 0.5rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .password_form .algo-input-div select option {
   text-align: center;
 }
-
 .password_form .algo-input-div select:hover,
 .password_form .algo-input-div select:active {
   background-color: white;
-  border: 1px solid #2e2e2e;
+  border: 1px solid rgb(46, 46, 46);
   outline: none;
 }
-
 .password_form .submit-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
-.password_form .submit-div input[type="submit"] {
+.password_form .submit-div input[type=submit] {
   cursor: pointer;
   width: 14rem;
   padding: 0.8rem;
@@ -307,12 +240,10 @@ p {
   border: none;
   outline: none;
   border-radius: 30rem;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-
-.password_form .submit-div input[type="submit"]:hover,
-.password_form .submit-div input[type="submit"]:active {
+.password_form .submit-div input[type=submit]:hover,
+.password_form .submit-div input[type=submit]:active {
   background-color: #1665ab;
 }
 
@@ -320,6 +251,7 @@ p {
   html {
     font-size: 50%;
   }
+
   .main-item_useraccount {
     max-width: 100%;
   }
@@ -330,18 +262,12 @@ p {
     max-width: 70%;
   }
   .main-item_useraccount .profile_form .profile-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-  .main-item_useraccount .profile_form .profile-img input[type="file"] {
+  .main-item_useraccount .profile_form .profile-img input[type=file] {
     position: relative;
-    -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
+    transform: translateX(-30%);
   }
   .main-item_useraccount .simple-line {
     margin: 2rem auto;
@@ -350,5 +276,4 @@ p {
   .main-item_useraccount .password_form {
     max-width: 70%;
   }
-}
-/*# sourceMappingURL=setting.css.map */
+}/*# sourceMappingURL=setting.css.map */

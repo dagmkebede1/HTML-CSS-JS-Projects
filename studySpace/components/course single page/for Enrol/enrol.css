@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,19 +14,10 @@ body {
 }
 
 .enrol-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .apply:link,
@@ -40,20 +30,16 @@ body {
   color: #5643fa;
   outline: 1px solid #5643fa;
   border-radius: 3rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .apply:link:hover, .apply:link:active,
 .apply:visited:hover,
 .apply:visited:active {
   background-color: #5643fa;
   color: white;
   outline: 1px solid white;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .down {
@@ -64,10 +50,8 @@ body {
   position: relative;
   width: 100%;
   height: 30rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
-
 .header img {
   opacity: 0.2;
   -o-object-fit: cover;
@@ -75,30 +59,18 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .header .header-text {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40%;
   left: 50%;
 }
-
 .header .header-text h2 {
   font-size: 3rem;
   font-weight: 300;
@@ -108,25 +80,22 @@ body {
 }
 
 .about {
-  background-color: rgba(84, 66, 250, 0.041);
+  background-color: hsla(246deg, 95%, 62%, 0.041);
 }
-
 .about .overview {
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
   padding: 4rem 0 0 0;
 }
-
 .about p {
   width: 70%;
   margin: 0 auto;
   padding: 2rem 0 4rem 0;
   font-size: 1.6rem;
-  color: #3d3c3c;
+  color: rgb(61, 60, 60);
   line-height: 2.5rem;
 }
-
 .about p span {
   font-size: 1.8rem;
   font-weight: 500;
@@ -135,53 +104,36 @@ body {
 .packages {
   width: 90%;
   margin: 4rem auto 0 auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   row-gap: 6rem;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
-
 .packages .package-item {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   gap: 1rem;
 }
-
 .packages .package-item svg {
   width: 5rem;
   height: 5rem;
-  stroke: #535353;
+  stroke: rgb(83, 83, 83);
 }
-
 .packages .package-item h2 {
   font-weight: 300;
   font-size: 3rem;
 }
-
 .packages .package-item p {
   color: #1c0abb;
   font-size: 4rem;
   font-weight: 200;
 }
-
 .packages .package-item p span {
   font-size: 1.8rem;
   font-weight: 300;
-}
-/*# sourceMappingURL=enrol.css.map */
+}/*# sourceMappingURL=enrol.css.map */

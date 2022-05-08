@@ -25,7 +25,7 @@ header {
 }
 
 .first-head {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #d9d7f1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,9 +57,13 @@ header {
     }
   }
   .profile {
+    border-left: 1px solid #d9d7f1;
+    padding: 0 0.8rem;
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      border: 2px solid grey;
     }
   }
 }
@@ -83,7 +87,7 @@ header {
 }
 .qa-section {
   display: grid;
-  grid-template-columns: 1fr 20rem;
+  grid-template-columns: 1fr 23rem;
   align-items: center;
   justify-content: center;
   .hero-text {
@@ -91,6 +95,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    gap: 2rem;
     background-image: url(./forum.jpg);
     background-size: cover;
     height: 50rem;
@@ -116,5 +121,49 @@ header {
   .popular {
     height: 100vh;
     background-color: $back1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #5f3dc4;
+    p {
+      font-size: 2rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #3a3e42;
+    }
+    .top-users {
+      a:link,
+      a:visited {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .pro-cont {
+          display: grid;
+          grid-template-columns: 5rem 1fr;
+          align-items: center;
+          img {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: 2px solid grey;
+          }
+          .name {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #3a3e42;
+          }
+          .role {
+            grid-column: 2/-1;
+            font-size: 1.2rem;
+            color: #5f3dc4;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }
