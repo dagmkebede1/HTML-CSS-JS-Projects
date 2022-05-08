@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+$back1: #f1f3f5;
+$back2: #e9ecef;
+$text-color: #495057;
+$btn-back1: #6741d9;
+$btn-back2: #5f3dc4;
+$bluish: #1c7ed6;
+$green: #2f9e44;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+}
+
+.first-head {
+  border-bottom: 1px solid #d9d7f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo-filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 2.5rem;
+      color: black;
+      span {
+        color: #6741d9;
+        font-weight: 700;
+      }
+    }
+    .filter {
+      display: flex;
+      flex-direction: column;
+      label {
+      }
+      select {
+        background-color: white;
+        border: none;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .profile {
+    border-left: 1px solid #d9d7f1;
+    padding: 0 0.8rem;
+    img {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      border: 2px solid grey;
+    }
+  }
+}
+.last-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a:link,
+  a:visited {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: #5f3dc4;
+    color: white;
+  }
+  a:hover,
+  a:active {
+    background-color: #7c51fc;
+    // border-radius: 5rem;
+  }
+}
+.qa-section {
+  display: grid;
+  grid-template-columns: 1fr 23rem;
+  .question-cont {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    .the-question {
+      margin-top: 5rem;
+      width: 80%;
+    }
+    .total {
+      font-size: 2rem;
+      //   margin-bottom: 2rem;
+    }
+    .question-title:link,
+    .question-title:visited {
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: #2a02a1;
+    }
+    .question-title:hover,
+    .question-title:active {
+      text-decoration: underline;
+    }
+    .about-que {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .time {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 1.2rem;
+        svg {
+          width: 2rem;
+          height: 2rem;
+          stroke: grey;
+        }
+      }
+      .asker:link,
+      .asker :visited {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #3a3e42;
+      }
+      .asker:hover,
+      .asker:active {
+        text-decoration: underline;
+      }
+      .answer:link,
+      .answer:visited {
+        text-decoration: none;
+        font-size: 1.4rem;
+        padding: 0.2rem 1rem;
+        background-color: rgb(13, 151, 13);
+        color: #fff;
+        border-radius: 3rem;
+      }
+      .answer:hover,
+      .answer:active {
+        background-color: darkgreen;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.popular {
+  height: 100vh;
+  background-color: $back1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1rem;
+  border: 1px solid #5f3dc4;
+  p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #3a3e42;
+  }
+  .top-users {
+    a:link,
+    a:visited {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .pro-cont {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        align-items: center;
+        img {
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          border: 2px solid grey;
+        }
+        .name {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #3a3e42;
+        }
+        .role {
+          grid-column: 2/-1;
+          font-size: 1.2rem;
+          color: #5f3dc4;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
