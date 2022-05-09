@@ -2,8 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,27 +15,15 @@ body {
 
 .first-head {
   border-bottom: 1px solid #d9d7f1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .first-head .logo-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1rem;
 }
-
 .first-head .logo-filter a:link,
 .first-head .logo-filter a:visited {
   text-decoration: none;
@@ -44,34 +31,24 @@ body {
   font-size: 2.5rem;
   color: black;
 }
-
 .first-head .logo-filter a:link span,
 .first-head .logo-filter a:visited span {
   color: #6741d9;
   font-weight: 700;
 }
-
 .first-head .logo-filter .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .first-head .logo-filter .filter select {
   background-color: white;
   border: none;
   font-size: 1.4rem;
 }
-
 .first-head .profile {
   border-left: 1px solid #d9d7f1;
   padding: 0 0.8rem;
 }
-
 .first-head .profile img {
   width: 4.5rem;
   height: 4.5rem;
@@ -80,17 +57,10 @@ body {
 }
 
 .last-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .last-head a:link,
 .last-head a:visited {
   padding: 1rem;
@@ -99,51 +69,32 @@ body {
   background-color: #5f3dc4;
   color: white;
 }
-
 .last-head a:hover,
 .last-head a:active {
   background-color: #7c51fc;
 }
 
 .qa-section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 23rem;
-      grid-template-columns: 1fr 23rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 1fr 23rem;
+  align-items: center;
+  justify-content: center;
 }
-
 .qa-section .hero-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
   background-image: url(./forum.jpg);
   background-size: cover;
   height: 50rem;
   width: 70rem;
 }
-
 .qa-section .hero-text h1 {
   font-size: 3rem;
   font-weight: 100;
 }
-
 .qa-section .hero-text a:link,
 .qa-section .hero-text a:visited {
   padding: 1rem;
@@ -153,63 +104,39 @@ body {
   color: #495057;
   font-weight: 600;
 }
-
 .qa-section .hero-text a:hover,
 .qa-section .hero-text a:active {
   color: #5f3dc4;
 }
-
 .qa-section .popular {
   height: 100vh;
   background-color: #f1f3f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
   border-radius: 1rem;
   border: 1px solid #5f3dc4;
 }
-
 .qa-section .popular p {
   font-size: 2rem;
   margin-top: 2rem;
   font-weight: 600;
   color: #3a3e42;
 }
-
 .qa-section .popular .top-users a:link,
 .qa-section .popular .top-users a:visited {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .qa-section .popular .top-users a:link .pro-cont,
 .qa-section .popular .top-users a:visited .pro-cont {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5rem 1fr;
-      grid-template-columns: 5rem 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
 }
-
 .qa-section .popular .top-users a:link .pro-cont img,
 .qa-section .popular .top-users a:visited .pro-cont img {
   width: 3.5rem;
@@ -217,19 +144,16 @@ body {
   border-radius: 50%;
   border: 2px solid grey;
 }
-
 .qa-section .popular .top-users a:link .pro-cont .name,
 .qa-section .popular .top-users a:visited .pro-cont .name {
   font-size: 1.6rem;
   font-weight: 500;
   color: #3a3e42;
 }
-
 .qa-section .popular .top-users a:link .pro-cont .role,
 .qa-section .popular .top-users a:visited .pro-cont .role {
   grid-column: 2/-1;
   font-size: 1.2rem;
   color: #5f3dc4;
   margin: 0;
-}
-/*# sourceMappingURL=algonetHome.css.map */
+}/*# sourceMappingURL=algonetHome.css.map */
