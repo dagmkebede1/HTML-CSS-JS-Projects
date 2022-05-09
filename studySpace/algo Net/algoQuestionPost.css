@@ -121,84 +121,100 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 5rem;
-}
-
-.qa-section .question-cont .the-question {
-  margin-top: 5rem;
   width: 80%;
 }
 
-.qa-section .question-cont .total {
+.qa-section .question-cont p {
   font-size: 2rem;
 }
 
-.qa-section .question-cont .question-title:link,
-.qa-section .question-cont .question-title:visited {
-  line-height: 2.5rem;
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #2a02a1;
-}
-
-.qa-section .question-cont .question-title:hover,
-.qa-section .question-cont .question-title:active {
-  text-decoration: underline;
-}
-
-.qa-section .question-cont .about-que {
-  margin-top: 1rem;
+.qa-section .question-cont .post-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.qa-section .question-cont .about-que .time {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.2rem;
+.qa-section .question-cont .post-form label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 1rem;
 }
 
-.qa-section .question-cont .about-que .time svg {
-  width: 2rem;
-  height: 2rem;
-  stroke: grey;
+.qa-section .question-cont .post-form input {
+  background-color: white;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #3a3e42;
 }
 
-.qa-section .question-cont .about-que .asker:link,
-.qa-section .question-cont .about-que .asker :visited {
-  text-decoration: none;
+.qa-section .question-cont .post-form input:focus,
+.qa-section .question-cont .post-form input:hover {
+  outline: 1px solid black;
+}
+
+.qa-section .question-cont .post-form select {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: white;
+  color: #3a3e42;
+}
+
+.qa-section .question-cont .post-form select:hover,
+.qa-section .question-cont .post-form select:focus {
+  outline: 1px solid black;
+}
+
+.qa-section .question-cont .post-form textarea {
+  border: none;
+  outline: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #3a3e42;
 }
 
-.qa-section .question-cont .about-que .asker:hover,
-.qa-section .question-cont .about-que .asker:active {
-  text-decoration: underline;
+.qa-section .question-cont .post-form textarea:focus,
+.qa-section .question-cont .post-form textarea:hover {
+  outline: 1px solid black;
 }
 
-.qa-section .question-cont .about-que .answer:link,
-.qa-section .question-cont .about-que .answer:visited {
-  text-decoration: none;
-  font-size: 1.4rem;
-  padding: 0.2rem 1rem;
-  background-color: #0d970d;
-  color: #fff;
-  border-radius: 3rem;
+.qa-section .question-cont .post-form input[type="file"] {
+  display: none;
 }
 
-.qa-section .question-cont .about-que .answer:hover,
-.qa-section .question-cont .about-que .answer:active {
-  background-color: darkgreen;
-  text-decoration: none;
+.qa-section .question-cont .post-form .photo {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 2px solid #fff;
+}
+
+.qa-section .question-cont .post-form .photo:hover,
+.qa-section .question-cont .post-form .photo:active {
+  color: #1c7ed6;
+  border-bottom: 2px solid #1c7ed6;
+}
+
+.qa-section .question-cont .post-form input[type="submit"] {
+  cursor: pointer;
+  background-color: #1c7ed6;
+  color: white;
+  font-size: 1.6rem;
+  max-width: 10rem;
+  border: none;
+  outline: none;
+}
+
+.qa-section .question-cont .post-form input[type="submit"]:hover,
+.qa-section .question-cont .post-form input[type="submit"]:active {
+  background-color: #5f3dc4;
 }
 
 .popular {
@@ -274,4 +290,4 @@ body {
   color: #5f3dc4;
   margin: 0;
 }
-/*# sourceMappingURL=algoNetQuestion.css.map */
+/*# sourceMappingURL=algoQuestionPost.css.map */
