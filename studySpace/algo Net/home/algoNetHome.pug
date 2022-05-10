@@ -1,0 +1,34 @@
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible' content='IE=edge')
+meta(name='viewport' content='width=device-width,initial-scale=1')
+title Document
+link(rel='stylesheet' href='algonetHome.css')
+header
+  .first-head
+    .logo-filter
+      a(href='#')
+        | Algo
+        span Net
+      .filter
+        label(for='filter') filter by
+        select#filter(name='filter')
+          option(value='algoz system') Algoz system
+          option(value='Programming language') Programming Language
+    .profile
+      a(href='#')
+        img(src='ppic.jpg' alt)
+  .last-head
+    a(href='#') Ask a Question
+section.qa-section
+  .hero-text
+    h1 The Place where all of your Questions Answered
+    a.explore(href='#') Explore Other's Questions
+  .popular
+    p Top Participants
+    .top-users
+      a(href='#')
+        .pro-cont
+          img(src='ppic.jpg' alt)
+          h2.name Samson Meseret
+          p.role Student
+footer
