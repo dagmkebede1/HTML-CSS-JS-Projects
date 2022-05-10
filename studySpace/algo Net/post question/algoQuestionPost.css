@@ -153,6 +153,7 @@ body {
   max-width: 10rem;
   border: none;
   outline: none;
+  transition: all 0.4s;
 }
 .qa-section .question-cont .post-form input[type=submit]:hover,
 .qa-section .question-cont .post-form input[type=submit]:active {

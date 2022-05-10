@@ -162,6 +162,7 @@ header {
         max-width: 10rem;
         border: none;
         outline: none;
+        transition: all 0.4s;
       }
       input[type="submit"]:hover,
       input[type="submit"]:active {
