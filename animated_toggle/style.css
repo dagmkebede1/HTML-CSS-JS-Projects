@@ -1,0 +1,58 @@
+.menu{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s;
+    position: relative;
+    /* background-color: grey; */
+    padding: 1rem;
+    
+}
+.menu:hover .menu-top
+{
+transform: translateY(-4px);
+}
+.menu:hover .menu-botton{
+    transform: translateY(17px);
+}
+.menu-top,
+.menu-middle,
+.menu-botton{
+    /* padding: 10px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.2s;
+}
+.menu-middle{
+    transform: translateY(7px);
+    /* background-color: red; */
+}
+.menu-botton{
+    transform: translateY(14px);
+    /* background-color: green; */
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+
+
+.open .menu-top,
+.open:hover .menu-top{
+    transform: rotate(45deg) translateY(6px) translate(6px)
+}
+
+.open .menu-middle{
+    display: none;
+}
+.open .menu-botton,
+.open:hover .menu-botton{
+    transform: rotate(-45deg) translateY(6px) translate(-6px)
+}
